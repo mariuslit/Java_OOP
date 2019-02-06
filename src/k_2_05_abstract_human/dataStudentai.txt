@@ -1,0 +1,7 @@
+S Andrius Jonaitis 19 Teisė 2
+S Petras Petraitis 21 Informatika 2
+D Jonas Jonaitis 30 Vadybininkas 6
+S Gabija Petraitytė 19 Dizainas 1
+D Petras Petraitis 21 Programutojas 2
+S Rasa Butkutė 23 Architektūra 5
+D Ona Jonaitienė 32 Buhalterė 7
