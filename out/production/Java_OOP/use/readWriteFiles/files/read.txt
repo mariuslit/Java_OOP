@@ -1,0 +1,3 @@
+Vardas Pavardė Amžius Lytis Vedęs
+String String Integer String Boolean
+Marius Litvinas 44 vyras true

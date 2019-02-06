@@ -1,0 +1,1 @@
+Gauta suma lygi = 42
