@@ -8,6 +8,12 @@ public class Studentas extends Zmogus {
     private String studijuKryptis;
     private Integer kursas;
 
+    public Studentas(String vardas, String pavardas, Integer amzius, String studijuKryptis, Integer kursas) {
+        super(vardas, pavardas, amzius);
+        this.studijuKryptis = studijuKryptis;
+        this.kursas = kursas;
+    }
+
     @Override
     public String toString() {
 

@@ -8,9 +8,9 @@ public class Fund_7_Methods_and_writeToFile {
     public static void main(String[] args) {
         try {
 
-            String filePath = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\Fund_7_";
+            String filePath = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\files\\";
 
-            Integer[] mas = skaityti(filePath + "readFileA.txt");
+            Integer[] mas = skaityti(filePath + "Fund_7_readFileA.txt");
 
             // 1. Masyvą apsukti, txt.y. jei masyvas yra lygus 1,2,3 , metodas turi grąžinti 3,2,1
             Integer[] apsuktasMasyvas = turnArray(mas);

@@ -6,10 +6,13 @@ public abstract class Zmogus {
     private String pavardas;
     private Integer amzius;
 
-    public abstract String toString();
+    public Zmogus(String vardas, String pavardas, Integer amzius) {
+        this.vardas = vardas;
+        this.pavardas = pavardas;
+        this.amzius = amzius;
+    }
 
-    // todo perdaryti su konstruktorium
-    // toto sukurti Darbuotojas klasę
+    public abstract String toString();
 
     public String getVardas() {
         return vardas;

@@ -1,0 +1,1 @@
+šis įrašas randasi faile src/a_fundamental/files/tekstas1.txt

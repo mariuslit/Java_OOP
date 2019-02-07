@@ -7,8 +7,11 @@ public class Fund_4_ReadWriteFile {
     public static void main(String[] args) {
 
         try {
-
-            String path = "src/lt.a_fundamental/files/";
+            // visi šie failo path nurodymai geri
+            String path = new File("").getAbsolutePath() + "\\src\\a_fundamental\\files\\";
+//            String path = "src/a_fundamental/files/";
+//            String path = "C:/Coding/Java_OOP/src/a_fundamental/files/";
+//            String path = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\files\\";
 
             skaityti(path + "tekstas1.txt");
             rasyti(path + "tekstas2.txt");
@@ -36,7 +39,7 @@ public class Fund_4_ReadWriteFile {
             String returnString = textLine.toString();
 
         } catch (FileNotFoundException ex) {
-            System.out.println("Failas nerastas");
+            System.out.println("Failas nerastas " + failas);
         } finally {
         }
     }
@@ -48,7 +51,7 @@ public class Fund_4_ReadWriteFile {
         try {
 
             output = new BufferedWriter(new FileWriter(failas));
-            output.write("šis įrašas randasi faile src/lt.a_fundamental/files/tekstas.txt");
+            output.write("šis įrašas randasi faile src/a_fundamental/files/tekstas1.txt");
 
         } catch (IOException e) {
             e.printStackTrace();

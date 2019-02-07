@@ -24,4 +24,9 @@ public class Fund_3_Loop_for_break_continue {
         }
         System.out.println("suma = " + suma); //
     }
+
+    /*
+    * FOR ciklo viduje Sring tipo masyvo narius galima palyginti: arr[i] == "xxx"
+    * FOR EACH ciklo viduje Sring tipo masyvo narius galima palyginti: item.equals("xxx")
+    * */
 }
