@@ -1,0 +1,75 @@
+Linux
+
+Kaip instaliuoti Linux  iš Windows
+----------------------------------
+
+Kas yra virtuali mašina - OS sistemoje veikianti programa (Hypervisor) kuri emuliuoja Hardware
+    trys pagrindiniai gamintojai virtualių mašinų gamintojai (komercinės):
+        VMWARE
+        ORACLE VirtualBox
+        Hyper-V (Microsoft) Windows7 neturi, nes prasidėjo nuo win8
+        dar yra KVM ir kitos
+
+Aktyvuosime Hyper-V - eikia kad BOS'ebūtų nustatyti kad leistų virtualios mašnos kūrimą, o jeigu nėra virtual-v turi būti virtualBox
+win programs and futures >> Hyper-v uždėti vanelę >> restart komputer
+
+    reikalingi žingsniai
+        Pasigaminame virtualią mašiną - virtualią geležį
+        į ją instaliuojame Linux
+
+LINUX
+
+Linux kaip OS turi branduolį, o įvairios programuotojų bendruomenės sukuria programų paketus distributyvus
+        (https://distrowatch.com/ parodo visus paketus)
+    Popouliariausios distribucijos:
+    Debian
+    Ubuntu (Debian vaikas) - mes instaliuosim
+    Fedora
+
+Failų sistemos
+    Wiindows - NTFS -  (vienintelė galima), FAT senesnė sistema (WindowsXP) galima formatuoti iki 2GB flash)
+    Mac OS - HFS - (vienintelė galima)
+    Linux (begalybė galimų sistemų)
+        ext2
+        ext3
+        ext4
+        RaiserFS
+        ...
+Linux gali veikti tiek grafinėje aplinkoje - GUI, tiek komandinėje eilutėje cmd
+Linux katalogai:
+    /etc - visi linux nustatymai, konfigūracija, skirtas administratoriams
+    /home - skirtas sistemos vartotojams (win=Users)
+    /var/log - saugomi ir rašomi sistemos žurnalai, sistemso įvykiai
+    /var/log/syslog - visos instlaiuotos programos deda savo įrašus čia
+
+Linu diskai:
+    neturi raidžių sistemos kai windows
+    linux turi failų sistemos medį prie kurio galima klijuoti naujo įrenginio falių sistemą
+    /snt - šiame kataloge matomi visi naujai prijungiami išoriniai įrenginiai kaip USB Flash
+
+Linux programų instaliavimas:
+    Ubuntu įrankis kuris instaliuoja paketus: apt arba apt-get, (kitose sistmose yumi)
+        jis automatiškai susiranda reikamą paketą, parsisiunčia ir instaliuoja (būtinas interneto ryšys)
+    komanda: apt install apache2
+
+istorija: os naudojimo viename kmpiuteryje
+    anksčiau buvo galima vienu metu turėti tik vieną operaciną eietemą [win][linux][qmx]...
+    po to atsirado virtualios mašinos, kai iš win galima paleisti vm ir jame naudoti linux
+    paskutinė mada - Docker - vidurys tarp os ir vm, nebūtina pačiam instaliuoti virtualios mašinos
+
+docker.com - instaliavimui, pirmam susipažinimui, dokumentacija
+    instaliuojame Docker Desktop
+    po instaliavimos reikia išsiloginti ir prisiloginti
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+Automobilis: VW Passat, Metai: 2005, Kaina: 2500 €, Variklis: 2000 cm2, Kuras: dyzelis
+Automobilis: Opel Astra, Metai: 2010, Kaina: 4000 €, Variklis: 1000 cm2, Kuras: dyzelis
+Automobilis: VW Passat, Metai: 2010, Kaina: 5000 €, Variklis: 2000 cm2, Kuras: dyzelis
+Automobilis: VW Golf, Metai: 1999, Kaina: 400 €, Variklis: 1000 cm2, Kuras: dyzelis
+Automobilis: Peugot 307, Metai: 2002, Kaina: 800 €, Variklis: 2000 cm2, Kuras: dyzelis
+Automobilis: Volvo S60, Metai: 1997, Kaina: 600 €, Variklis: 1000 cm2, Kuras: dyzelis
+Automobilis: Toyota Yaris, Metai: 2004, Kaina: 2000 €, Variklis: 1000 cm2, Kuras: benzinas
+Automobilis: Audi A6, Metai: 2008, Kaina: 6000 €, Variklis: 3000 cm2, Kuras: benzinas
+Automobilis: Toyota Corolla, Metai: 2002, Kaina: 1500 €, Variklis: 2000 cm2, Kuras: dyzelis
+Automobilis: BMW 320, Metai: 2007, Kaina: 4500 €, Variklis: 2000 cm2, Kuras: benzinas

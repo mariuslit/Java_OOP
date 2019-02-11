@@ -1,6 +1,7 @@
 package a_fundamental;
 
 public class Fund_1_Variables {
+
     public static void main(String[] args) {
 
         // Data Type	             Default        number max                       number min

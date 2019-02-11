@@ -6,9 +6,9 @@ public abstract class Paukstis {
         System.out.println("aaaaaaa");
     }
 
-    public abstract String gautiPavadinimą();
+    public abstract String gautiPavadinima();
     public abstract Integer gautiGyvenimoAmziu();
-    public abstract Double gautiSvorį();
+    public abstract Double gautiSvori();
 
 
 }

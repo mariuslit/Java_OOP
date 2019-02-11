@@ -1,6 +1,9 @@
 package a_fundamental;
 
+import k_2_08_uzduotisSavaitgaliui_masinos.Car;
+
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Fund_5_Array {
 
@@ -81,5 +84,67 @@ public class Fund_5_Array {
             }
             System.out.println();
         }
+
+        MaistoProduktai[] mp = new MaistoProduktai[4];
+
+        mp[0] = new MaistoProduktai("Pienas", 3d, 6);
+        mp[1] = new MaistoProduktai("Duona", 1d, 5);
+        mp[2] = new MaistoProduktai("Dešra", 0.4, 10);
+        mp[3] = new MaistoProduktai("Kepenėlės", 0.5, 2);
+
+
+        // greitas būdas išrūšiuoti objektų mąsyvą pagal parametrą
+        Arrays.sort(mp, Comparator.comparing(MaistoProduktai::getKiekis));
+        spausdinti(mp,"\n pagal kiekį");
+        Arrays.sort(mp, Comparator.comparing(MaistoProduktai::getGaliojimasDien));
+        spausdinti(mp,"\n pagal galiojimą");
+    }
+
+    public static <T> void spausdinti(T[] arr, String txt) {
+        System.out.println(" - "+txt);
+        for (T item : arr) {
+
+            System.out.println(item.toString());
+        }
+    }
+}
+
+class MaistoProduktai {
+    private String name;
+    private Double kiekis;
+    private Integer galiojimasDien;
+
+    public MaistoProduktai(String name, Double kiekis, Integer galiojimasDien) {
+        this.name = name;
+        this.kiekis = kiekis;
+        this.galiojimasDien = galiojimasDien;
+    }
+
+    public String toString() {
+        return getName() + " " + getKiekis() + " " + getGaliojimasDien();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getKiekis() {
+        return kiekis;
+    }
+
+    public void setKiekis(Double kiekis) {
+        this.kiekis = kiekis;
+    }
+
+    public Integer getGaliojimasDien() {
+        return galiojimasDien;
+    }
+
+    public void setGaliojimasDien(Integer galiojimasDien) {
+        this.galiojimasDien = galiojimasDien;
     }
 }

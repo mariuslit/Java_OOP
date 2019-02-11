@@ -2,7 +2,6 @@ package k_1_31_inheritance_animals;
 
 public class VykdytiFarmAnimals {
 
-
     /*
      * 1   Sukurti bazinę klasę Animal ir vaikines klases Cat, Dog, Cow, Sheep, Chicken.
      *         Užkloti toString funkciją, kad jis gražintų kokį garsą skleidžia gyvūnas.

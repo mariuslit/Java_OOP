@@ -16,6 +16,8 @@ interface Skaiciuoti {
 
 class Operacijos {
 
+    // Java anonimnės klasės tai tokios klasės kurios yra lokalios klasės arba vdinės klasės be pavdinimo
+
     // Sąsajos įdiegimas anonimine klase
     Skaiciuoti ano = new Skaiciuoti() {
 
@@ -25,7 +27,7 @@ class Operacijos {
         }
     };
 
-    // Testas:
+    // MainCars:
     public static void main(String[] args) {
 
         Operacijos op = new Operacijos();
@@ -36,7 +38,7 @@ class Operacijos {
 
 
 /**
- * Sąsajos įdiegimas lambda išraiška
+ * Anoniminės sąsajos įdiegimas lambda išraiška
  */
 class OperacijosLambdaIsraiska {
 
@@ -45,7 +47,7 @@ class OperacijosLambdaIsraiska {
         return Math.pow(a, 2);
     };
 
-    // Testas:
+    // MainCars:
     public static void main(String[] s) {
 
         OperacijosLambdaIsraiska opr = new OperacijosLambdaIsraiska();

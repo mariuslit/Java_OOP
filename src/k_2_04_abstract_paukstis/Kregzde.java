@@ -7,7 +7,7 @@ public class Kregzde extends Paukstis{
     }
 
     @Override
-    public String gautiPavadinimą() {
+    public String gautiPavadinima() {
         return "kregzde";
     }
 
@@ -18,7 +18,7 @@ public class Kregzde extends Paukstis{
     }
 
     @Override
-    public Double gautiSvorį() {
+    public Double gautiSvori() {
 
         return 0.4;
     }

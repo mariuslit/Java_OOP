@@ -8,6 +8,15 @@ public class Fund_7_Methods_and_writeToFile {
     public static void main(String[] args) {
         try {
 
+            Integer[] iii = {6666};
+            System.out.println(iii[0]);
+
+            iii = Arrays.copyOf(iii,iii.length+1);
+            System.out.println(iii[1]);
+            iii[iii.length-1]=88;
+            System.out.println(iii[1]);
+
+
             String filePath = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\files\\";
 
             Integer[] mas = skaityti(filePath + "Fund_7_readFileA.txt");

@@ -45,5 +45,8 @@ public class Fund_9_Regex {
             i++;
         }
         System.out.println("|---------------|----------|----------|---------------NEBAIGTAS----------------------------|");
+
+        System.out.println("text1 " + 5.587895566 + " text2");
+        System.out.printf("text1 %.2f textas2\n %.3f hhhhhh", 5.587895566, 8.456987, 55);
     }
 }

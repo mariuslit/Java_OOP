@@ -3,7 +3,7 @@ package use.readWriteFiles;
 import java.io.File;
 import java.io.IOException;
 
-public class VykdytiReadWriteFiles {
+public class TestReadWriteFile {
 
     public static void main(String[] args) throws IOException {
 

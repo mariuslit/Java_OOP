@@ -2,10 +2,10 @@ package a_fundamental;
 
 /**
  * vidinių (inner) klasių kūrimas ir anaudojimas
- *
+ * <p>
  * vidinės klasės gali būti dviejų tipų - paprastos ir statinės (pažymėtos static).
  */
-public class Fund_11_ClassInner {
+public class Fund_11_Class_Inner {
 
     public static void main(String[] args) {
 
@@ -35,15 +35,23 @@ public class Fund_11_ClassInner {
 
 class A {
 
-    String a_text;
+    String a_text="bet koks tekstas";
 
     class B {
-
         String b_text;
+
+        // anoniminė ar ne ???
+        class C{
+
+        }
+
+        void print(){
+            System.out.println(A.this.a_text);
+        }
     }
 
-    static class B2 {
 
+    static class B2 {
         String b2_text;
     }
 }

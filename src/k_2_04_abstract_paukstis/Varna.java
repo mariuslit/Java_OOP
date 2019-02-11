@@ -7,7 +7,7 @@ public class Varna extends Paukstis {
     }
 
     @Override
-    public String gautiPavadinimą() {
+    public String gautiPavadinima() {
         return "varna";
     }
 
@@ -18,7 +18,7 @@ public class Varna extends Paukstis {
     }
 
     @Override
-    public Double gautiSvorį() {
+    public Double gautiSvori() {
 
         return 0.7;
     }
