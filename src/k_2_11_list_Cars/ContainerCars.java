@@ -1,6 +1,6 @@
 package k_2_11_list_Cars;
 
-import k_2_08_uzduotisSavaitgaliui_masinos.Car;
+import k_2_08_uzduotisSavaitgaliui_Cars.Car;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -9,41 +9,33 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContainerCars<T> {
+public class ContainerCars<E> {
+
+    public List<E> cars;
 
     public static void main(String[] args) {
 
-        Car[] cars2 = new Car[]{
-                new Car("VW", "Galant", 2019, 50000, 2.5, "B"),
-                new Car("Mitsubishi", "Galant", 2019, 50000, 2.5, "B"),
-                new Car("Mitsubishi", "Galant", 2019, 50000, 2.5, "B"),
-                new Car("Mitsubishi", "Galant", 2019, 50000, 2.5, "B"),
-                new Car("Opel", "Galant", 2019, 50000, 2.5, "B")
-        };
-//        System.out.println(cars2[4].toString());
-//        System.out.println();
+        ContainerCars cc = new ContainerCars();
+        cc.cars = new ArrayList<>();
 
-        List<Car> cars = new ArrayList<>();
         try {
 
-            cars = skaityti("C:\\Coding\\Java_OOP\\src\\k_2_11_list_Cars\\dataRead.txt");
+            cc.cars = skaityti("C:\\Coding\\Java_OOP\\src\\k_2_11_list_Cars\\cars.txt");
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        cc.cars.add(new Car("Mitsubishi", "xxx", 2019, 40000, 2.5, "B"));
+        cc.cars.add(new Car("Opel", "fff", 2019, 50000, 1.9, "D"));
+        cc.cars.add(new Car("Toyota", "ddd", 2019, 80000, 2.0, "B"));
+        cc.cars.add(new Car("Ford", "nnn", 2019, 20000, 1.5, "B"));
 
-        cars.add(new Car("Mitsubishi", "Galant", 2019, 50000, 2.5, "B"));
-        cars.add(new Car("Opel", "Galant", 2019, 50000, 2.5, "B"));
-        cars.add(new Car("Toyota", "Galant", 2019, 50000, 2.5, "B"));
-        cars.add(new Car("Ford", "Galant", 2019, 50000, 2.5, "B"));
+        for (int i = 0; i < cc.cars.size(); i++) {
 
-        for (int i = 0; i < cars.size(); i++) {
-
-            System.out.println(cars.get(i).getGamintojas());
+            System.out.println(cc.cars.get(i));
             StringBuilder s;
         }
-
     }
 
     public static List<Car> skaityti(String failas) throws IOException {
@@ -52,9 +44,11 @@ public class ContainerCars<T> {
 
             String line = br.readLine();
 
-            List<Car> cars = new ArrayList<>(Integer.parseInt(line));
+            List<Car> cars = new ArrayList<>();
 
-            for (int i = 0; i < cars.size(); i++) {
+            int lines = Integer.parseInt(line);
+
+            for (int i = 0; i < lines; i++) {
                 line = br.readLine();
 
                 String[] arr = line.split(" ");
@@ -64,7 +58,7 @@ public class ContainerCars<T> {
                         Integer.parseInt(arr[3]),
                         Double.parseDouble(arr[4]),
                         arr[5]);
-                cars.set(i, car);
+                cars.add(car);
             }
 
             return cars;
@@ -75,6 +69,4 @@ public class ContainerCars<T> {
         }
         return null;
     }
-
-
 }

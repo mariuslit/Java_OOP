@@ -16,7 +16,7 @@ public class Fund_11_Class_Inner {
         A.B2 vidinesStatines_Kl_Obj = new A.B2(); // statinės
 
 
-// todo kaip pasiekti B2 klasės kintamuosius ir metodus
+// todo paklausti Džiugo kaip pasiekti B2 klasės kintamuosius ir metodus
 //        A.this.a_text
 //
 //        A-klasė.this.išorinės-klasės-laukas-ar-metodas
@@ -35,17 +35,17 @@ public class Fund_11_Class_Inner {
 
 class A {
 
-    String a_text="bet koks tekstas";
+    String a_text = "bet koks tekstas";
 
     class B {
         String b_text;
 
         // anoniminė ar ne ???
-        class C{
+        class C {
 
         }
 
-        void print(){
+        void print() {
             System.out.println(A.this.a_text);
         }
     }

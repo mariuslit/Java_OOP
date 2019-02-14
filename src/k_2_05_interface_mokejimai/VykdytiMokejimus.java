@@ -35,7 +35,7 @@ public class VykdytiMokejimus {
                     mokejimai[i].amount());
             if (mokejimai[i] instanceof Client) {
 
-                // eikalingas kastinimas nes noriu iš interfeisinio masyvo išraukti konkrečios klasės objektą
+                // eikalingas xxx_kastinimas nes noriu iš interfeisinio masyvo išraukti konkrečios klasės objektą
                 System.out.println("   mokėjimų skaičius: " + ((Client) mokejimai[i]).getMokejimai().length);
             }
         }

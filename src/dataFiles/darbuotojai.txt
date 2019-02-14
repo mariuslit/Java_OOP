@@ -1,0 +1,6 @@
+Petras Petraitis 28 Vadybininkas 1000.01
+Jonas Jonaitis 35 Santechnikas 1050.50
+Stasys Kablys 22 Statybininkas 2000.01
+Petras Brazauskas 21 Programutojas 2500.00
+Ona Jonaitienė 32 Buhalterė 2500.00
+Andrius Jonaitis 30 Vadybininkas 3000.77

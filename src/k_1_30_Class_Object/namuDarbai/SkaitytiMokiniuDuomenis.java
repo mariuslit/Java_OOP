@@ -13,7 +13,7 @@ public class SkaitytiMokiniuDuomenis {
     public static void main(String[] args) {
 
         String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_30_Class_Object\\namuDarbai\\";
-        Mokinys[] mokiniai = skaityti(filePath, "mokiniuDuomenys.txt");
+        Mokinys[] mokiniai = skaityti(filePath, "mokiniai.txt");
 
         for (Mokinys mok : mokiniai) {
             System.out.print("V.: " + mok.getVardas());

@@ -1,0 +1,8 @@
+Vardas Pavardė AsmensKodas
+Saulius Briedauskas 123456123
+Darius Andraitis 123456789
+Marius Litvinas 123456789
+Rytis Briedaitis 123456789
+Jonas Jonaitis 456789123
+Giedrius Matusa 654987321
+Andrius Petraitis 987654321

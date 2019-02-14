@@ -1,7 +1,5 @@
 package a_fundamental;
 
-import k_2_08_uzduotisSavaitgaliui_masinos.Car;
-
 import java.util.Arrays;
 import java.util.Comparator;
 

@@ -1,0 +1,5 @@
+S Andrius Jonaitis 19 Teisė 2
+S Petras Petraitis 21 Informatika 2
+S Gabija Petraitytė 19 Dizainas 1
+S Rasa Butkutė 23 Architektūra 5
+
