@@ -37,7 +37,6 @@ public class TestEmployee {
             System.out.println(e.toString() + " --- hash code " + e.hashCode());
         }
 
-
         // todo surūšiuoti pagal gaunamą atlyginimą ir atspausdinti
     }
 

@@ -1,0 +1,14 @@
+10 13
+Petras_Petraitis 2
+Jonas_Jonaitis 1
+Andrijauskaitė_Agnė 1
+Balsytė_Giedrė 3
+Bružas_Darius 2
+Eičinaitė_Ema 2
+Gulbinas_Kęstas 1
+Kumponas_Ervidas 1
+Lapšytė_Vilija 3
+Pranauskis_Pranas 3
+Pranauskytė_Meda 2
+Vasaris_Liudas 2
+Žiulpauskas_Ąžuolas 1

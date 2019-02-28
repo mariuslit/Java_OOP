@@ -1,0 +1,11 @@
+Sudarytos klasės mokinių sąrašas:
+Jonas_Jonaitis 1
+Andrijauskaitė_Agnė 1
+Gulbinas_Kęstas 1
+Kumponas_Ervidas 1
+Žiulpauskas_Ąžuolas 1
+Petras_Petraitis 2
+Bružas_Darius 2
+Eičinaitė_Ema 2
+Pranauskytė_Meda 2
+Vasaris_Liudas 2

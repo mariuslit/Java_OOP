@@ -1,0 +1,39 @@
+    Programuotojų klasė.
+
+    Jaunųjų programuotojų mokykla nori sudaryti vieną papildomą programavimo technologijų pakraipos klasę,
+        į kurią gali priimti nustatytą mokinių skaičių. Buvo atliktas bandomasis testas,
+        pagal kurį mokiniai buvo įvertinti 3 kriterijais:
+            turintys labai gerus,
+            vidutinius ir
+            patenkinamus programavimo pradmenis.
+        Turintys
+            labai gerus programavimo pagrindus priimami pirmu prioritetu,
+            vidutinius – antru, o
+            patenkinamus - trečiu.
+
+        Sudarykite į klasę priimamų mokinių sąrašą.
+        Tą patį prioritetą turintys mokiniai tarpusavyje nėra reitinguojami, o jų vieta sąraše nustatoma atsitiktinai.
+
+        Duomenų failo Duomenys.txt pirmoje eilutėje duotas
+            maksimalus klasės mokinių skaičius ir norinčių mokytis mokinių skaičius,
+            o tolesnėse – norinčių mokytis mokinių sąrašas, kuriame mokinys aprašomas
+                vardu,
+                pavarde ir
+                prioritetu (1, 2 arba 3).
+
+        Rezultatų faile Rezultatai.txt turi būti išvedamas į klasę priimamų mokinių sąrašas.
+
+---------------------------------
+Rezultatai turi būti tokie:
+
+Sudarytos klasės mokinių sąrašas:
+Žiulpauskas_Ąžuolas 1
+Kumponas_Ervidas 1
+Gulbinas_Kęstas 1
+Andrijauskaitė_Agnė 1
+Jonas_Jonaitis 1
+Vasaris_Liudas 2
+Pranauskytė_Meda 2
+Eičinaitė_Ema 2
+Bružas_Darius 2
+Petras_Petraitis 2

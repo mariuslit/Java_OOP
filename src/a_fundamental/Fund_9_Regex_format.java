@@ -1,6 +1,7 @@
 package a_fundamental;
 
 import java.text.DecimalFormat;
+import java.text.Format;
 import java.text.NumberFormat;
 
 public class Fund_9_Regex_format {
@@ -26,7 +27,6 @@ public class Fund_9_Regex_format {
         p(regex);
 
 //        System.out.println("  |------------------------------------------------|");
-//        System.out.println("1 |" + num.replaceAll("[^a-zA-Z0-9]", r) + "|"); // visi simboliai išskyrus raides
 //        System.out.println("2 |" + num.replaceAll("\\W+", r) + "|"); // visos ne ridės
 //        System.out.println("3 |" + num.replaceAll("[\\w+-]", r) + "|"); // visos ne ridės, palieka + ir -
 //        System.out.println("3+|" + num.replaceAll("\\w+", r) + "|"); // visos ne ridės, palieka + ir -
@@ -55,16 +55,47 @@ public class Fund_9_Regex_format {
     }
 }
 
-class formatai{
+class formatai {
 
     public static void main(String[] args) {
 
-        NumberFormat d = new DecimalFormat("#0.00");
+        NumberFormat decimalFormat;
 
-        System.out.println(d.format(4.5));
+        System.out.println("------------------------------------");
+        decimalFormat = new DecimalFormat("#00");
+        System.out.println(decimalFormat.format(5));
+        System.out.println(decimalFormat.format(154.5));
 
+        System.out.println("------------------------------------");
+        decimalFormat = new DecimalFormat("#0.00");
         // TODO: 2019-02-13 paklausti Džiugo dėl 0.055 kodėl apvalinamas į 0.5
-        System.out.println(d.format(4.055));
+        System.out.println(decimalFormat.format(4.055));
+        System.out.println(decimalFormat.format(4.5));
+
+        System.out.println("------------------------------------");
+        System.out.println(String.format("|%20d|", 93));// prints: |                  93|
+        System.out.println(String.format("|%-20d|", 93));// prints: |93                  |
+
+        System.out.println(String.format("|%.5s|", "Hello World")); //  prints: |Hello|
+        System.out.println(String.format("|%.15s|", "Hello World")); // prints: |Hello World|
+        System.out.println(String.format("|%15s|", "Hello World")); //  prints: |    Hello World|
+        System.out.println(String.format("|%-15s|", "Hello World")); // prints: |Hello World    |
+
 
     }
 }
+
+class String_replaceAll_regex {
+
+    public static void main(String[] args) {
+
+        // išmetami visi papildomi tarpai
+        System.out.println("|123 abc a  b   c .     ,    +    -|");
+        System.out.println("|123 abc a  b   c .     ,    +    -|".replaceAll("\\s+", " "));
+
+
+
+
+    }
+}
+

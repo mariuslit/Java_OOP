@@ -17,10 +17,10 @@ public class TestEmployee {
         +      alga.
         +   Nuskaityti duomenų failą(moodle įkeltas) ir įdėti objektus į List‘ą;
             TODO: 2019-02-14 Stream
-        + todo  Išrikiuoti pagal vardą,
-        + todo     jei vardai vienodi pagal pavardę, ...
-        + todo     Departamentą, ...
-        + todo     Algą.
+        +                    Išrikiuoti pagal vardą,
+        +                       jei vardai vienodi pagal pavardę, ...
+        +                       Departamentą, ...
+        +                       Algą.
         +   Rasti daugiausiai uždirbantį darbuotoją;
         +   Nufiltruoti į kitą List‘ą uždirbančius daugiau nei 1000;
         +   Rasti visus skirtingus departamentų tipus ir
@@ -69,11 +69,11 @@ public class TestEmployee {
     public static Map<Employee, Integer> vienodiEmployee(List<Employee> employees) {
 
         Map<Employee, Integer> vienodi = new TreeMap<>();
-        Set<Employee> unic = new TreeSet<>(employees);
+        Set<Employee> unique = new TreeSet<>(employees);
 
-        System.out.println(unic.size());
+        System.out.println(unique.size());
 
-        for (Employee uniklus : unic) {
+        for (Employee uniklus : unique) {
 
             int n = rastiPasikrtojanciuObjektuSkaiciu(uniklus, employees);
 

@@ -5,7 +5,24 @@ import java.util.Scanner;
 
 public class Fund_2_Scanner {
 
+    public static void copyPaste() {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Įveskite du skaičius per tarpą pvz: '5 99'");
+        String line = sc.nextLine();
+
+        String[] metimas = line.split(" ");
+
+        Integer pirmasSkaicius = Integer.parseInt(metimas[0]);
+        Integer antrasSkaicius = Integer.parseInt(metimas[1]);
+
+        System.out.println("pirmas sk=" + pirmasSkaicius + " antras sk=" + antrasSkaicius);
+    }
+
     public static void main(String[] args) {
+
+        copyPaste();
 
         // sukuriamas Scanner objektas sc
         Scanner sc = new Scanner(System.in);

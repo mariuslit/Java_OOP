@@ -27,7 +27,7 @@ public class namuDarbasA {
         try {
             String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_24\\namuDarbai_A\\";
 
-            Integer[] mas = skaityti(filePath + "Fund_7_readFileA.txt");
+            Integer[] mas = skaityti(filePath + "readFileA.txt");
 
             // 1. Masyvą apsukti, t.y. jei masyvas yra lygus 1,2,3 , metodas turi grąžinti 3,2,1
             Integer[] apsuktasMasyvas = turnArray(mas);
@@ -249,16 +249,16 @@ public class namuDarbasA {
 
 //        Integer[] sorttedArray = new Integer[]{};
         Integer temp;
-        Integer sk=0;
+        Integer sk = 0;
         for (int i = 0; i < arr.length; i++) {
 
-            for (int j = 0; j < arr.length -1 - i; j++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
 
                 if (arr[j] > arr[j + 1]) {
 
                     temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                     System.out.println(++sk);
                 }
             }
@@ -296,10 +296,12 @@ public class namuDarbasA {
     // -------------------------------------   F <<
     private static void rasyti(String failas, Integer[] arr) throws IOException {
 
-        BufferedWriter output = null;
+//        BufferedWriter output = null;
 
-        try {
-            output = new BufferedWriter(new FileWriter(failas));
+        try (BufferedWriter output = new BufferedWriter(new FileWriter(failas))) {
+
+//            try {
+//            output = new BufferedWriter(new FileWriter(failas));
             StringBuilder text = new StringBuilder();
 
             for (int i = 0; i < arr.length; i++) {
@@ -310,11 +312,8 @@ public class namuDarbasA {
 
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            if (output != null) {
-                output.close();
-            }
         }
     }
-
 }
+
+

@@ -1,0 +1,81 @@
+Orientacinio sporto varžybos.
+
+Miške paslepiami kontroliniai punktai, kuriuos sportininkai
+privalo surasti. Kiekviename punkte paliktas varžybų blankas ir rašymo priemonė. Suradęs
+punktą sportininkas tame blanke užrašo punkto radimo laiką ir savo numerį, o savo blanke – tą
+patį laiką ir surasto punkto numerį. Be to, teisėjai fiksuoja sportininko numerį, jo starto laiką ir
+finišo laiką. Starto ir finišo laiką užsirašo ir sportininkas savo blanke. Punktus sportininkas lanko
+bet kokia tvarka, tik paskutinis punktas turi būti finišas. Startas neįeina į punktų skaičių, jame tik
+fiksuojamas starto laikas. Sportininkai gauna kompasus ir žemėlapius, kuriuose pažymėti visi
+punktai, taip pat ir startas. Jeigu sportininkas neranda finišo punkto, tai jis turi grįžti į startą, o
+vietoje finišo laiko įrašomas grįžimo į startą laikas. Tokiu atveju jo rezultatai nėra skaičiuojami.
+Punktai numeruojami iš eilės pradedant nuo vieneto. Punktas su didžiausiu numeriu yra finišas.
+Punktuose esantys varžybų blankai yra pateikiami teisėjų kolegijai. Varžybų nugalėtojai
+nustatomi pirmiausia atsižvelgiant į rastų punktų skaičių. Didesnis rastų punktų skaičius
+garantuoja aukštesnę vietą. Jei keli sportininkai rado vienodą punktų skaičių, tai tuomet
+tikrinama, kuris iš jų trasoje užtruko trumpiau. Nėra dviejų sportininkų, kurie turėtų du vienodus
+pagrindinius kriterijus – vienodą punktų skaičių ir bėgimo trasoje trukmę. Trasą įveikia bent
+vienas sportininkas. Jeigu sportininkas nesutinka su teisėjų kolegijos sprendimu, jis gali pateikti
+apeliaciją su savo blanku ir palyginti savo ir teisėjų duomenis.
+
+Duomenys
+    orient-duomenys.txt
+        duota informacija, kurią turi teisėjų kolegija.
+        Pirmoje failo eilutėje duotas sportininkų skaičius n (2 ≤ n ≤ 100). Sportininkai numeruojami
+        skaičiais iš eilės nuo 1 iki n pagal surašymo tvarką duomenų faile. Tolesnėse n eilučių yra duoti
+        sportininkų vardai ir pavardės (keli žodžiai, iš viso iki 16 simbolių) starto laikas ir finišo laikas
+        išreikšti valandomis minutėmis ir sekundėmis. Bet kurio sportininko laikas trasoje neviršija 8
+        valandų. Toliau duotas punktų skaičius p (2 ≤ p ≤ 20). Kitose p eilučių surašyti tokie duomenys:
+        Punkto numeris, punktą radusių sportininkų skaičius ir sportininkų numeriai, atskirti tarpais.
+
+-------------------------------------------------------------------------------------------------------
+Rezultatai.
+    orient-rezultatai.txt
+        Rezultatai spausdinami tokiu pavidalu:
+            Reikia apskaičiuoti, kuriam sportininkui skiriama pirmoji vieta, atspausdinti jo vardą ir pavardę.
+            Toliau spausdinti visą trasą įveikusių sportininkų sąrašą rezultato blogėjimo tvarka:
+                Vardas ir pavardė – kaip duota tekstiniame faile, po to 1 tarpas.
+                Surastų punktų skaičiui skiriamos 2 pozicijos, po to 1 tarpas.
+                sugaištas laikas trasoje - Laikas tiek duomenų, tiek rezultatų faile užrašytas naudojant dvitaškį.
+                    Valandų skaičiui skiriamos dvi pozicijos.
+                    Minutės ir sekundės spausdinamos dviženkliais skaičiais.
+                    Jei skaičius vienaženklis – priekyje pridedamas nulis.
+            Nepasiekę finišo sportininkai nespausdinami.
+
+nugalėtojai:
+    kas surinko daugau punktų sort punktai z-a
+    kieno laikas trumpesnis   sort laikas  a-z
+
+Reikalavimai programai:
+1. Aprašykite struktūrą, kuri tiktų saugoti vieno sportininko duomenis. Gali būti
+naudojamos ir kitos struktūros, pavyzdžiui, saugoti laikui.
+2. Programoje panaudokite struktūrų masyvą.
+3. Parašykite skaitymo funkciją (procedūrą). Skaitymo funkcija gali atlikti tam tikrą skaitomų duomenų apdorojimą.
+4. Parašykite kitas duomenų apdorojimo funkcijas (procedūras).
+5. Parašykite funkciją (procedūrą), kuri spausdina rezultatus.
+
+-------------------------------------------------------------------------------------------------------
+orient-duomenys.txt
+4                               Sportininkų skaičius
+Jonas Gugis  8:45:01 10:11:25   Vardas, pavardė, starto ir finišo laikas
+Petras Kukis 8:50:00 10:06:11
+Balys Tomkus 8:55:00 11:34:56
+Algis Jonkus 9:00:00 10:08:55
+5                               Punktų skaičius.  Finišas yra 5 punktas
+1 3 1 3 4                       Pirmą punktą aplankė 3 sportininkai, kurių numeriai 1, 3 ir 4,
+3 4 2 1 3 4
+2 3 1 3 4
+5 3 1 3 4                       Petras Kukis finišo nepasiekė
+4 4 1 2 3 4
+
+orient-rezultatai.txt
+Algis Jonkus I vieta
+
+Algis Jonkus 5 1:08:55
+Jonas Gugis  5 1:26:25
+Balys Tomkus 5 2:39:56
+
+Sportininkas
+    Integer punktai
+    Integer duration
+

@@ -1,0 +1,10 @@
+Rezultatų failas
+SandelisRez.txt
+Lorenz el. krosnelė       21  12
+Cook aerogrilis           23  11
+Gastroback sulčiaspaudė   219 11
+Philips sulčiaspaudė      225 12
+Beko šaldytuvas           431 18
+First kavamalė            603 21
+DeLonghi kavamalė         615  3
+Aurum el.virdulys         718 54

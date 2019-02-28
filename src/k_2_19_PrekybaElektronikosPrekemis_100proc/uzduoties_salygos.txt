@@ -1,0 +1,30 @@
+pdf 71ps.
+
+Prekyba elektronikos prekėmis.
+
+Parduotuvė prekiauja buitine elektronika. Parduodama n (3 ≤
+n ≤ 100) modelių aparatų. Modelis nusakomas numeriu [1..n], pavadinimu (18 simbolių) ir kaina.
+Atlikta p (3 ≤ p ≤ 1000) pardavimų fiksuojant modelį ir parduotų aparatų skaičių.
+Apskaičiuokite: kiek vienetų parduota populiariausio modelio; kiek surinkta pinigų už
+populiariausią modelį; kiek vienetų parduota pelningiausio modelio; kiek buvo surinkta už
+pelningiausią modelį. Kuris modelis yra mažiausiai populiarus? Kiek parduota jo vienetų ir kiek
+už jį buvo surinkta pinigų. Net ir mažiausiame duomenų faile nebus vienodai vertinamų modelių.
+Duomenys. Duomenys tekstiniame faile Duomenys.txt pateikti tokiu būdu:
+pirmojoje eilutėje įrašytas prekių skaičius n;
+kitose n eilučių įrašyta prekės numeris, pavadinimas ir kaina;
+po to įrašytas pardavimų skaičius p;
+toliau yra dar p duomenų eilučių. Kiekvienoje po du skaičius: prekės numeris ir parduotas
+tos prekės kiekis.71
+Rezultatai. Rezultatai rašomi į tekstinį failą Rezultatai.txt blokais. Iš viso turėtų būti suformuoti
+trys analogiški blokai atitinkamai populiariausiai, pelningiausiai ir mažiausiai populiariai prekei.
+Kiekybiniai ribojimai. Skirtingų prekių skaičius nėra mažesnis už 3 ir neviršija 100. Pardavimų
+skaičius nėra mažesnis už 3 ir neviršija 1000. Kainos ir kiekiai nėra labai dideli skaičiai, nereikia
+imtis specialių priemonių, kad išvengti perpildymo, ar galimai susikaupusių skaičiavimo
+realiaisiais skaičiais paklaidų įvertinimo.
+Reikalavimai programai:
+1. naudokite struktūras (įrašus) ir jų masyvus, sveikuosius ir realiuosius skaičius;
+2. sudarykite struktūrą (įrašą) ir masyvą, skirtą prekės duomenims saugoti;
+3. sukurkite pradinių duomenų skaitymo procedūrą (funkciją void C++);
+4. sukurkite rezultatų rašymo į failą procedūrą (funkciją void C++);
+5. sukurkite funkcijas, randančias populiariausią, pelningiausią ir mažiausiai populiarią
+prekę.

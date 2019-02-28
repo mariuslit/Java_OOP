@@ -11,8 +11,8 @@ public class Fund_5_Array {
 
         // 1 tik deklaravimas
         String[] arr1; // pageidautinas
-        // String []arr2; // inteliJ automatiškai pakoreguoja tokį deklaravimą
         String arr3[];
+        // String []arr2; // nepageidautinas, inteliJ automatiškai pakoreguoja tokį deklaravimą
 
         // 2 deklaravimas, inicializavimas su default reikšėmis
         int[] arr4 = new int[5]; // 5 narių asyvas, kurių reikšmės Integer tipo = 0 (default)
@@ -50,15 +50,22 @@ public class Fund_5_Array {
 
 
         // array kopijavimas
-        char[] copyFrom = {
-                'd', 'e', 'c', 'a', 'f', 'f', 'e', 'i', 'n', 'a', 't', 'e', 'd'};
+        //                  0    1    2    3    4    5    6    7    8    9    10   11   12
+        char[] copyFrom = {'d', 'e', 'c', 'a', 'f', 'f', 'e', 'i', 'n', 'a', 't', 'e', 'd'};
         char[] copyTo = new char[7];
 
         //copying array using System.arraycopy() method
         System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+        // copyFrom - iš kokio masyvo kopijuoti
+        // 2        - nuo kurio indekso (indeksas 2 = 'c')
+        // copyTo   - į kokį masyva kopijuoti
+        // 0        - nuo kurios pozicijos pradėti kopijvimą copyTo mayve
+        // 7        - kiek pozicijų kopijuoti
 
         //printing the destination array
+        System.out.println(copyTo[0]);
         System.out.println(String.valueOf(copyTo));
+        System.out.println(copyTo[6]);
 
 
         //=======================================================================================//
@@ -93,13 +100,13 @@ public class Fund_5_Array {
 
         // greitas būdas išrūšiuoti objektų mąsyvą pagal parametrą
         Arrays.sort(mp, Comparator.comparing(MaistoProduktai::getKiekis));
-        spausdinti(mp,"\n pagal kiekį");
+        spausdinti(mp, "\n pagal kiekį");
         Arrays.sort(mp, Comparator.comparing(MaistoProduktai::getGaliojimasDien));
-        spausdinti(mp,"\n pagal galiojimą");
+        spausdinti(mp, "\n pagal galiojimą");
     }
 
     public static <T> void spausdinti(T[] arr, String txt) {
-        System.out.println(" - "+txt);
+        System.out.println(" - " + txt);
         for (T item : arr) {
 
             System.out.println(item.toString());

@@ -1,0 +1,19 @@
+**************************************************************************************
+| Nr. | Vardas, Pavardė       | Baudos | Dvit. | Trit. | Nepat. | Taskai | Tikslumas |
+**************************************************************************************
+| 88  | Tomas Samalionis      | 0      | 0     | 0     | 0      | 0      |     0,0 % |
+| 33  | Valdas Dobilas        | 0      | 4     | 4     | 4      | 20     |    66,7 % |
+| 26  | Tomas Lukonaitis      | 0      | 0     | 0     | 0      | 0      |     0,0 % |
+| 23  | Mindaugas Lukonaitis  | 0      | 4     | 4     | 4      | 20     |    66,7 % |
+| 13  | Darius Gricius        | 0      | 0     | 0     | 0      | 0      |     0,0 % |
+| 12  | Aldevinas Siriūnaitis | 8      | 0     | 0     | 4      | 8      |    66,7 % |
+| 11  | Justas Ališauskas     | 0      | 4     | 8     | 4      | 32     |    75,0 % |
+| 10  | Henrikas Paulauskas   | 4      | 4     | 0     | 0      | 12     |   100,0 % |
+| 9   | Justinas Vitkus       | 8      | 12    | 4     | 8      | 44     |    75,0 % |
+| 4   | Giedrius Purauskas    | 4      | 0     | 0     | 4      | 4      |    50,0 % |
+| 3   | Robertinas Vilimas    | 0      | 0     | 0     | 0      | 0      |     0,0 % |
+| 2   | Donatas Drimeikis     | 0      | 0     | 0     | 0      | 0      |     0,0 % |
+**************************************************************************************
+     Daugiausia taškų pelnė: Nr. 9  Justinas Vitkus     : 44
+ Daugiausia įmetė tritaškių: Nr. 11 Justas Ališauskas   : 8
+               Taikliausias: Nr. 10 Henrikas Paulauskas : 100.0 %

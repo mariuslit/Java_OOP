@@ -1,5 +1,8 @@
 package xxx_kastinimas;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class Kastinimas {
 
     public static void main(String[] args) {
@@ -23,6 +26,19 @@ public class Kastinimas {
         int iiii = 327695;
         short sss = (short) iiii;
         System.out.println(sss);
+    }
+}
 
+class Double_apvalinimas {
+
+    public static void main(String[] args) {
+
+        System.out.println(4.055);
+        System.out.println(4.5);
+
+        NumberFormat d = new DecimalFormat("#0.00");
+        // TODO: 2019-02-13  kodėl 0.055 apvalinamas į 0.5
+        System.out.println(d.format(4.055));
+        System.out.println(d.format(4.5));
     }
 }

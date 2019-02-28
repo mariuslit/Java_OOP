@@ -4,7 +4,6 @@ import a_fundamental.filesJava.Employee;
 import a_fundamental.filesJava.Employee2;
 import a_fundamental.filesJava.Salary;
 import a_fundamental.filesJava.Zmogus;
-
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.*;
@@ -160,6 +159,19 @@ class Collection_MapHashMapTreeMap {
         System.out.println("TreeMap:");
         testMap(new TreeMap<>());
 
+        System.out.println("-------------------- kaip paimti pirmą Key reikšmę iš Map");
+
+        Map<String, String> map = new LinkedHashMap<>();
+
+        map.put("xxx", "aaa");
+        map.put("yyy", "bbb");
+        map.put("zzz", "ccc");
+
+        System.out.println(map.get(map.keySet().toArray()[0]));
+        System.out.println(map.get(map.keySet().toArray()[1]));
+        System.out.println(map.get(map.keySet().toArray()[2]));
+
+        sortingMapByKey();
     }
 
     private static void testMap(Map<String, Integer> map) {
@@ -199,6 +211,22 @@ class Collection_MapHashMapTreeMap {
             System.out.print(" " + i);
         }
         System.out.println();
+    }
+
+    private static void sortingMapByKey() {
+
+        // nerūšiuotas Map'as
+        Map<Integer, String> unsortMap = new LinkedHashMap<>();
+        unsortMap.put(1, "A");
+        unsortMap.put(3, "B");
+        unsortMap.put(2, "C");
+
+        // sortinimas su lambda išraiška
+        Map<Integer, String> treeMap = new TreeMap<>((o1, o2) -> o2.compareTo(o1));
+        treeMap.putAll(unsortMap);
+
+        System.out.println(treeMap);
+
     }
 }
 
@@ -673,7 +701,7 @@ class Collection_ListSetMap_collectors_groupingBy_stream5 {
     }
 }
 
-class Collection_ZmogusIrSalaryExamle{
+class Collection_ZmogusIrSalaryExamle {
 
     public static void main(String[] args) {
 
@@ -681,21 +709,20 @@ class Collection_ZmogusIrSalaryExamle{
 
         Map<String, Zmogus> zodynas = new HashMap<>();
 
-        zodynas.put("3",new Zmogus("Andrius", "Petras", "3"));
-        zodynas.put("1",new Zmogus("Jonas", "Petras", "1"));
-        zodynas.put("4",new Zmogus("Darius", "Petras", "4"));
-        zodynas.put("3",new Zmogus("Andrius", "Petras", "3"));
-        zodynas.put("1",new Zmogus("Jonas", "Petras", "1"));
-        zodynas.put("2",new Zmogus("Jonas", "Petras", "2"));
-        zodynas.put("5",new Zmogus("Andrius", "Petras", "5"));
-        zodynas.put("1",new Zmogus("Jonas", "Petras", "1"));
-        zodynas.put("2",new Zmogus("Darius", "Petras", "2"));
+        zodynas.put("3", new Zmogus("Andrius", "Petras", "3"));
+        zodynas.put("1", new Zmogus("Jonas", "Petras", "1"));
+        zodynas.put("4", new Zmogus("Darius", "Petras", "4"));
+        zodynas.put("3", new Zmogus("Andrius", "Petras", "3"));
+        zodynas.put("1", new Zmogus("Jonas", "Petras", "1"));
+        zodynas.put("2", new Zmogus("Jonas", "Petras", "2"));
+        zodynas.put("5", new Zmogus("Andrius", "Petras", "5"));
+        zodynas.put("1", new Zmogus("Jonas", "Petras", "1"));
+        zodynas.put("2", new Zmogus("Darius", "Petras", "2"));
 
         System.out.println(zodynas);
 
         TreeMap<String, Zmogus> treeZodynas = new TreeMap<>(zodynas);
         System.out.println(treeZodynas);
-
 
 
         System.out.println("*** Salary example ***");

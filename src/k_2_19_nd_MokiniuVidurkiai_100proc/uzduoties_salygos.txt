@@ -1,0 +1,25 @@
+pdf 72ps.
+
+3. Mokinių vidurkiai.
+
+Faile Duomenys.txt pateiktas mokinių sąrašas su mokomųjų dalykų
+vidurkiais. Pirmoje eilutėje nurodytas mokinių skaičius. Kitose eilutėse - mokinio vardas,
+pavardė, klasė, dalykų skaičius ir likę skaičiai – tų dalykų vidurkiai.
+
+Sukurkite programą, kuri
+suskaičiuotų kiekvieno mokinio visų dalykų vidurkį (apvalinant iki 1 skaičiaus po kablelio ir
+papildomai pateikiant suapvalinus iki sveikosios dalies) bei sugrupuotų mokinius pagal klases.
+Sąrašo pabaigoje pateikti dviejų mokinių, turinčių didžiausią ir mažiausią vidurkius, vardus,
+pavardes ir klases. Jei yra po kelis mokinius, turinčius didžiausią ir mažiausią vidurkius, tuomet
+reikia pateikti pirmųjų sąraše esančių mokinių su atitinkamais vidurkiais, duomenis. Rezultatus
+pateikti faile
+
+rezultatai.txt
+
+Reikalavimai programai:
+1. duomenims saugoti naudoti struktūras ir struktūrų masyvus;
+2. galutiniams rezultatams saugoti sukurti naują struktūrų masyvą;
+3. sukurkite pradinių duomenų iš failo skaitymo funkciją;
+4. sukurkite vidurkio skaičiavimo funkciją;
+5. sukurkite rezultatų įrašymo į failą funkciją.
+

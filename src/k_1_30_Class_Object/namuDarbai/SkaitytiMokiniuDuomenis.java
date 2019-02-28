@@ -1,6 +1,6 @@
 package k_1_30_Class_Object.namuDarbai;
 
-import a_fundamental.Fund_7_Methods_and_writeToFile;
+import a_fundamental.Fund_7_Metodai_su_skaiciais;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -19,7 +19,7 @@ public class SkaitytiMokiniuDuomenis {
             System.out.print("V.: " + mok.getVardas());
             System.out.print(", P.: " + mok.getPavarde());
             System.out.print(", Kl.: " + mok.getKlase());
-            System.out.println(", Paž.vid.: " + Fund_7_Methods_and_writeToFile.getAverageArr(mok.getPazymiai()));
+            System.out.println(", Paž.vid.: " + Fund_7_Metodai_su_skaiciais.getAverageArr(mok.getPazymiai()));
         }
     }
 

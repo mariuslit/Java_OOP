@@ -1,0 +1,75 @@
+﻿INTERNETAS
+
+IP uniklaiai identifikuoja kompiuterį internete
+
+IP adresas 4 skaičiukai nuo 0 iki 255
+
+pvz 255.255.255.0
+
+Išorinis IP: 193.219.78.177 google išmetė šį adresą kai vyko paskaita, tai turėtų būti išorinis Balticatlents routerio (maršrutizatoriaus) adesas
+tuo tarpu man buvo suteiktas 172.24.4.193 laikinas vidinis IP adresas
+
+NAT network adress translation esantis routeryje
+pakeičia išorinį IP į vidinį ir atvirkščiai kai gauna duomenis 
+
+SA source adress
+DA destination adress
+
+---
+rašyti consolėje:
+cmd
+ipconfig (galima naudoti ipconfig /all detalesniems duomenims)
+... paskaitoje
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::55:237:a89c:6c57%9
+   IPv4 Address. . . . . . . . . . . : 172.24.4.193
+   Subnet Mask . . . . . . . . . . . : 255.255.254.0
+   Default Gateway . . . . . . . . . : 172.24.5.254
+
+... namuose
+Wireless LAN adapter Wi-Fi:
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::55:237:a89c:6c57%9
+   IPv4 Address. . . . . . . . . . . : 192.168.0.101
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.0.1
+
+---
+internete rodomas mano namų routerio IP adresas 88.222.23.170
+---
+
+servisas routeryje IHTTP
+šio serviso drbas yra dalinti IP aresus vidiniame tinkle.
+
+DNS serveris
+žino visus vardus (pvz google.lt delfi.lt ...)
+naršyklė prieš kreipiantis į internetą siunčiama užklausa iš IP į IP, todl pirmiausiai kreipiamasi į DNS serverį, kurio darbas yra žinoti koks IP atsakingas už kokį adresą. DNS yra serveris kuris ieško adresų pagal IP
+
+FTP skrtas 21 portas
+MySql skirtas 3306 portas
+
+portas yra skirtas unikaliai identifikuoti programą
+
+vienu metu gali būti 65505 conection iš vieno kompiuterio
+portas uniklaiai identifikuoja programą
+
+HTTP:// userNme password wwww.adresas.lt/ ... id=kazkoks
+       protokolas
+HTTP kokia kalba kalbėsiu su serveriu, dfaultinis portas yra 80 portas
+HTTPS dfaultinis portas yra 443 portas
+id=kazkoks tai reiškia kad naršyklė paskrolins iki šio elemento
+
+privat key ir public key skirti duomenų šifravimui paremta pirminių skaičių matematika su laai dideliais skaičiais
+
+top level sertification autority organizacija sertifikuoja public key kurie siunčiami į kreipiantis į bankus ar kitus tiekėjus per https protokolą
+
+
+
+
+
+
+
+
+
+\

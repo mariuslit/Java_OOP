@@ -1,0 +1,6 @@
+Rezultatų failas
+UžsakymaiRez.txt
+Panasonic džiov. mašina   122  2 1559,00
+Bosch džiov. Mašina       124  3 1899,00
+Petra virdulys juodas     701  1 159,00
+Sumokėti tiekėjams 8974,00
