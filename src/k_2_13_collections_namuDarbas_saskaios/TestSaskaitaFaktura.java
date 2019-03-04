@@ -1,9 +1,6 @@
 package k_2_13_collections_namuDarbas_saskaios;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -26,7 +23,7 @@ public class TestSaskaitaFaktura {
 
         List<Saskata> saskataFakturas;
 
-        saskataFakturas = skaityti("C:\\Coding\\Java_OOP\\src\\dataFiles\\klientai.txt");
+        saskataFakturas = skaityti(new File("").getAbsolutePath() + "\\src\\dataFiles\\klientai.txt");
 
         spausdinti(saskataFakturas, "PRADINIS LISTAS");
 

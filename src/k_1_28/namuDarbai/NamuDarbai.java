@@ -1,9 +1,6 @@
 package k_1_28.namuDarbai;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 
 public class NamuDarbai {
@@ -28,7 +25,7 @@ public class NamuDarbai {
 
     public static void main(String[] args) {
         try {
-            String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_28\\namuDarbai\\";
+            String filePath = new File("").getAbsolutePath() + "\\src\\k_1_28\\namuDarbai\\";
 
             readFileAndPrintArrays(filePath + "readFileD.txt");
 

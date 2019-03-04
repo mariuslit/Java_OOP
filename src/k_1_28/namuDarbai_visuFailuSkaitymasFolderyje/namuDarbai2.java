@@ -7,7 +7,7 @@ public class namuDarbai2 {
 
     public static void main(String[] args) {
 
-        String path = "C:\\Coding\\Java_OOP\\src\\k_1_28\\namuDarbai_visuFailuSkaitymasFolderyje\\filesToRead\\";
+        String path = new File("").getAbsolutePath() + "\\src\\k_1_28\\namuDarbai_visuFailuSkaitymasFolderyje\\filesToRead\\";
         final File folder = new File(path);
 
         // 1 pirmas būdas nuskaityti failų pavadinimus iš katalogo, kreiptis į rekursinį metodą

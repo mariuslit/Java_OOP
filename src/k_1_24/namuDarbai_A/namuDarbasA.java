@@ -25,7 +25,7 @@ public class namuDarbasA {
     // *    1. Masyvą apsukti, t.y. jei masyvas yra lygus 1,2,3 , metodas turi grąžinti 3,2,1
     public static void main(String[] args) {
         try {
-            String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_24\\namuDarbai_A\\";
+            String filePath = new File("").getAbsolutePath() + "\\src\\k_1_24\\namuDarbai_A\\";
 
             Integer[] mas = skaityti(filePath + "readFileA.txt");
 

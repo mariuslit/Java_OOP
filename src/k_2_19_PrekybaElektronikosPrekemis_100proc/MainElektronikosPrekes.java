@@ -1,9 +1,6 @@
 package k_2_19_PrekybaElektronikosPrekemis_100proc;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +18,7 @@ public class MainElektronikosPrekes {
     */
     public static void main(String[] args) throws IOException {
 
-        Map<Integer, Telefonas> telefonai = nuskaitytiDuomenis("C:\\Coding\\Java_OOP\\src\\k_2_19_PrekybaElektronikosPrekemis_100proc\\Duomenys.txt");
+        Map<Integer, Telefonas> telefonai = nuskaitytiDuomenis(new File("").getAbsolutePath() + "\\src\\k_2_19_PrekybaElektronikosPrekemis_100proc\\Duomenys.txt");
 
         for (Telefonas tel : telefonai.values()) {
 

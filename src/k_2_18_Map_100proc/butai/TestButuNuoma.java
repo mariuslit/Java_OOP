@@ -1,17 +1,14 @@
 package k_2_18_Map_100proc.butai;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class TestButuNuoma {
 
     public static void main(String[] args) throws IOException {
 
-        List<Butas> butai = gautiStudentus("C:\\Coding\\Java_OOP\\src\\k_2_18_Map_100proc\\butai\\Duomenys.txt");
-        Kriterijai kriterijai = gautiKriterijus("C:\\Coding\\Java_OOP\\src\\k_2_18_Map_100proc\\butai\\Kriterijai.txt");
+        List<Butas> butai = gautiStudentus(new File("").getAbsolutePath() + "\\src\\k_2_18_Map_100proc\\butai\\Duomenys.txt");
+        Kriterijai kriterijai = gautiKriterijus(new File("").getAbsolutePath() + "\\src\\k_2_18_Map_100proc\\butai\\Kriterijai.txt");
 
         System.out.println(butai.toString());
         System.out.println(kriterijai.toString());

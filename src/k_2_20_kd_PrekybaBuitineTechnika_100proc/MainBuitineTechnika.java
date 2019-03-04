@@ -7,10 +7,10 @@ public class MainBuitineTechnika {
 
     public static void main(String[] args) throws IOException {
 
-        String pathSandelis = "C:\\Coding\\Java_OOP\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\Sandelis.txt";
-        String pathUzsakymai = "C:\\Coding\\Java_OOP\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\Uzsakymai.txt";
-        String pathSandelisRez = "C:\\Coding\\Java_OOP\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\SandelisRez.txt";
-        String pathUzsakymaiRez = "C:\\Coding\\Java_OOP\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\UžsakymaiRez.txt";
+        String pathSandelis = new File("").getAbsolutePath() + "\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\Sandelis.txt";
+        String pathUzsakymai = new File("").getAbsolutePath() + "\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\Uzsakymai.txt";
+        String pathSandelisRez = new File("").getAbsolutePath() + "\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\SandelisRez.txt";
+        String pathUzsakymaiRez = new File("").getAbsolutePath() + "\\src\\k_2_20_kd_PrekybaBuitineTechnika_100proc\\UžsakymaiRez.txt";
 
         Map<Integer, Technika> technikaMap = nuskaitytiDuomenis(pathSandelis);
 //        System.out.println("\n- Buitinė technika");

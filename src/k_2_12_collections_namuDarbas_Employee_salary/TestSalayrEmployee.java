@@ -1,9 +1,6 @@
 package k_2_12_collections_namuDarbas_Employee_salary;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +22,7 @@ public class TestSalayrEmployee {
 
     public static void main(String[] args) throws IOException {
 
-        List<Employee> employees = skaityti("C:\\Coding\\Java_OOP\\src\\k_2_12_collections_namuDarbas_Employee_salary\\darbuotojai.txt");
+        List<Employee> employees = skaityti(new File("").getAbsolutePath() + "\\src\\k_2_12_collections_namuDarbas_Employee_salary\\darbuotojai.txt");
 
         List<Salary> salaries = new ArrayList<>();
 

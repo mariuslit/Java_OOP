@@ -10,8 +10,8 @@ public class MainProgramuotojuKlase {
 
     public static void main(String[] args) throws IOException {
 
-        Map<Integer, List<Mokinys>> mokiniai = gautiMokinius("C:\\Coding\\Java_OOP\\src\\k_2_18_Map_nd_programuotoju_klase_100proc\\Duomenys.txt");
-        Integer max = gautiMaxMokiniuSkaiciuKlaseje("C:\\Coding\\Java_OOP\\src\\k_2_18_Map_nd_programuotoju_klase_100proc\\Duomenys.txt");
+        Map<Integer, List<Mokinys>> mokiniai = gautiMokinius(new File("").getAbsolutePath() + "\\src\\k_2_18_Map_nd_programuotoju_klase_100proc\\Duomenys.txt");
+        Integer max = gautiMaxMokiniuSkaiciuKlaseje(new File("").getAbsolutePath() + "\\src\\k_2_18_Map_nd_programuotoju_klase_100proc\\Duomenys.txt");
 
         mokiniai.forEach((a, b) -> b.forEach(c -> System.out.println(c)));
 
@@ -20,7 +20,7 @@ public class MainProgramuotojuKlase {
         System.out.println(max);
         prioritetiniaiMokiniai.forEach((b) -> System.out.println(b.toString()));
 
-        rasyti("C:\\Coding\\Java_OOP\\src\\k_2_18_Map_nd_programuotoju_klase_100proc\\Rezultatai.txt", prioritetiniaiMokiniai);
+        rasyti(new File("").getAbsolutePath() + "\\src\\k_2_18_Map_nd_programuotoju_klase_100proc\\Rezultatai.txt", prioritetiniaiMokiniai);
     }
 
     private static List<Mokinys> gautiPrioritetineKlase(Map<Integer, List<Mokinys>> mokiniai, Integer max) {

@@ -8,7 +8,7 @@ public class Fund_7_Metodai_su_skaiciais {
     public static void main(String[] args) {
         try {
 
-            String filePath = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\files\\readFileA.txt";
+            String filePath = new File("").getAbsolutePath() + "\\src\\a_fundamental\\files\\readFileA.txt";
 
             Integer[] mas = skaityti(filePath);
 

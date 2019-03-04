@@ -1,9 +1,6 @@
 package k_2_13_collections_klasesDarbas_darbuotojai;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.*;
@@ -34,7 +31,7 @@ public class TestEmployee {
 
     public static void main(String[] args) throws IOException {
 
-        List<Employee> employees = skaityti("C:\\Coding\\Java_OOP\\src\\k_2_13_collections_klasesDarbas_darbuotojai\\darbuotojai.txt");
+        List<Employee> employees = skaityti(new File("").getAbsolutePath() + "\\src\\k_2_13_collections_klasesDarbas_darbuotojai\\darbuotojai.txt");
         spausdinti(employees, "Pradinis sąrašas");
 
         Collections.sort(employees);

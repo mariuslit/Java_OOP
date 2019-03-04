@@ -20,7 +20,7 @@ public class KlasesDarbai {
 
     public static void main(String[] args) {
         try {
-            String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_28\\klasesDarbai\\";
+            String filePath = new File("").getAbsolutePath() + "\\src\\k_1_28\\klasesDarbai\\";
 
             String mas = skaityti(filePath + "readFileC.txt");
             String[] arrStr = mas.split(" ");

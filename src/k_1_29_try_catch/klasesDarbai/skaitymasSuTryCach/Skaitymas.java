@@ -1,9 +1,6 @@
 package k_1_29_try_catch.klasesDarbai.skaitymasSuTryCach;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 /*
  * užduotis sukurti metodą kuris turėtų nuskaityti failą, o neradęs jo nuskaitytų kitą failą, naudoti try - catch
@@ -11,7 +8,7 @@ import java.io.IOException;
 public class Skaitymas {
 
     public static void main(String[] args) {
-        String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_29_try_catch\\klasesDarbai\\skaitymasSuTryCach\\";
+        String filePath = new File("").getAbsolutePath() + "\\src\\k_1_29_try_catch\\klasesDarbai\\skaitymasSuTryCach\\";
 
         String mas = skaityti(filePath, "readFile_1.txt");
         String[] arrStr1 = mas.split(" ");

@@ -2,10 +2,7 @@ package k_2_11_list_Cars;
 
 import k_2_08_uzduotisSavaitgaliui_Cars.Car;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +17,7 @@ public class ContainerCars<E> {
 
         try {
 
-            cc.cars = skaityti("C:\\Coding\\Java_OOP\\src\\k_2_11_list_Cars\\cars.txt");
+            cc.cars = skaityti(new File("").getAbsolutePath() + "\\src\\k_2_11_list_Cars\\cars.txt");
 
         } catch (IOException e) {
             e.printStackTrace();

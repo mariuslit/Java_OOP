@@ -2,17 +2,14 @@ package k_1_30_Class_Object.namuDarbai;
 
 import a_fundamental.Fund_7_Metodai_su_skaiciais;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 
 public class SkaitytiMokiniuDuomenis {
 
     public static void main(String[] args) {
 
-        String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_30_Class_Object\\namuDarbai\\";
+        String filePath = new File("").getAbsolutePath() + "\\src\\k_1_30_Class_Object\\namuDarbai\\";
         Mokinys[] mokiniai = skaityti(filePath, "mokiniai.txt");
 
         for (Mokinys mok : mokiniai) {

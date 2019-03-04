@@ -9,9 +9,8 @@ public class Fund_4_ReadWriteFile {
         // visi šie failo path nurodymai geri
         // String path = "src/a_fundamental/files/tekstas1.txt";
         // String path = "C:/Coding/Java_OOP/src/a_fundamental/files/tekstas1.txt";
-        // String path = new File("").getAbsolutePath() + "\\src\\a_fundamental\\files\\tekstas1.txt";
-
-        String path = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\files\\tekstas1.txt";
+//        String path = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\files\\tekstas1.txt";
+        String path = new File("").getAbsolutePath() + "\\src\\a_fundamental\\files\\tekstas1.txt";
         String txt = skaityti(path);
 
         txt = txt + "+ naujas tekstas";
@@ -37,6 +36,7 @@ public class Fund_4_ReadWriteFile {
 
                 line = br.readLine();
             }
+
             String returnString = textLine.toString();
 
             return returnString;

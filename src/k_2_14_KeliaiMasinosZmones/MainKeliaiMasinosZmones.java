@@ -32,8 +32,8 @@ public class MainKeliaiMasinosZmones {
 
     public static void main(String[] args) throws IOException {
 
-        String pathD = "C:\\Coding\\Java_OOP\\src\\MainKeliaiMasinosZmones\\DarbuotojuDuomenys.txt";
-        String pathM = "C:\\Coding\\Java_OOP\\src\\MainKeliaiMasinosZmones\\Masinos.txt";
+        String pathD = new File("").getAbsolutePath() + "\\src\\MainKeliaiMasinosZmones\\DarbuotojuDuomenys.txt";
+        String pathM = new File("").getAbsolutePath() + "\\src\\MainKeliaiMasinosZmones\\Masinos.txt";
         List<Masina> masinuDB = skaitytiMasinas(pathM);
         System.out.println(masinuDB.size());
 

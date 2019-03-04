@@ -9,7 +9,7 @@ public class MainMokiniuVidurkiai {
 
     public static void main(String[] args) throws IOException {
 
-        Map<String, List<Mokinys>> klases = nuskaitytiDuomenis("C:\\Coding\\Java_OOP\\src\\k_2_19_nd_MokiniuVidurkiai_100proc\\Duomenys.txt");
+        Map<String, List<Mokinys>> klases = nuskaitytiDuomenis(new File("").getAbsolutePath() + "\\src\\k_2_19_nd_MokiniuVidurkiai_100proc\\Duomenys.txt");
 
         spausdintiAtaskaita(klases);
     }

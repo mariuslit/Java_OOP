@@ -21,7 +21,7 @@ class WriteObjToFile {
 
         Krepsininkas krepsininkas = new Krepsininkas(11, "Arvydas Sabonis");
 
-        String path = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\Fund_0_kiti_pavyzdziai\\Fund_4_ReadWriteFile_implements_Serializable.txt";
+        String path = new File("").getAbsolutePath() + "\\src\\a_fundamental\\Fund_0_kiti_pavyzdziai\\Fund_4_ReadWriteFile_implements_Serializable.txt";
         FileOutputStream fout = new FileOutputStream(path);
         ObjectOutputStream out = new ObjectOutputStream(fout);
         out.writeObject(krepsininkas);
@@ -34,7 +34,7 @@ class ReadObjFromFile {
 
     public static void main(String args[]) throws Exception {
 
-        String path = "C:\\Coding\\Java_OOP\\src\\a_fundamental\\Fund_0_kiti_pavyzdziai\\Fund_4_ReadWriteFile_implements_Serializable.txt";
+        String path = new File("").getAbsolutePath() + "\\src\\a_fundamental\\Fund_0_kiti_pavyzdziai\\Fund_4_ReadWriteFile_implements_Serializable.txt";
         FileInputStream fin = new FileInputStream(path);
         ObjectInputStream in = new ObjectInputStream(fin);
         Krepsininkas krepsininkas = (Krepsininkas) in.readObject();

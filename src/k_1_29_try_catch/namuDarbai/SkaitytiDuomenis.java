@@ -1,15 +1,12 @@
 package k_1_29_try_catch.namuDarbai;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 
 public class SkaitytiDuomenis {
 
     public static void main(String[] args) {
-        String filePath = "C:\\Coding\\Java_OOP\\src\\k_1_29_try_catch\\namuDarbai\\";
+        String filePath = new File("").getAbsolutePath() + "\\src\\k_1_29_try_catch\\namuDarbai\\";
         Darbuotojas[] darbuotojai = skaityti(filePath, "Duomenys.txt");
         System.out.println("elementas = " + darbuotojai[1].getAmzius());
     }

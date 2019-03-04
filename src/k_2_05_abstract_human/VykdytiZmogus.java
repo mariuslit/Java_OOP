@@ -1,5 +1,6 @@
 package k_2_05_abstract_human;
 
+import java.io.File;
 import java.io.IOException;
 
 public class VykdytiZmogus {
@@ -31,7 +32,7 @@ public class VykdytiZmogus {
 
         // 3 uzduoties "Žmonių Konteineris" vykdymas
         ZmoniuKonteineris zk = new ZmoniuKonteineris();
-        zk.skaitytiDuomenisIsFailo("C:\\Coding\\Java_OOP\\src\\k_2_05_abstract_human\\data.txt");
+        zk.skaitytiDuomenisIsFailo(new File("").getAbsolutePath() + "\\src\\k_2_05_abstract_human\\data.txt");
         zk.spausdintiZmones();
         System.out.println("\nVyriausias žmogus yra ");
         zk.spausdintiVienaZmogu(zk.vyriausiasZmogus());

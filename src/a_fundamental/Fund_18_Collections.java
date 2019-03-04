@@ -4,6 +4,7 @@ import a_fundamental.filesJava.Employee;
 import a_fundamental.filesJava.Employee2;
 import a_fundamental.filesJava.Salary;
 import a_fundamental.filesJava.Zmogus;
+
 import java.math.BigDecimal;
 import java.util.*;
 import java.util.function.*;
@@ -159,17 +160,36 @@ class Collection_MapHashMapTreeMap {
         System.out.println("TreeMap:");
         testMap(new TreeMap<>());
 
-        System.out.println("-------------------- kaip paimti pirmą Key reikšmę iš Map");
 
+        System.out.println("-------------------- kaip paimti noimą Key reikšmę iš Map su indeksu");
         Map<String, String> map = new LinkedHashMap<>();
 
         map.put("xxx", "aaa");
         map.put("yyy", "bbb");
         map.put("zzz", "ccc");
 
-        System.out.println(map.get(map.keySet().toArray()[0]));
-        System.out.println(map.get(map.keySet().toArray()[1]));
-        System.out.println(map.get(map.keySet().toArray()[2]));
+        List<String> arr = new ArrayList<>(map.keySet()); // jei norime kye reikšmių
+        List<String> arr2 = new ArrayList<>(map.values()); // jei norime kye reikšmių
+
+        System.out.println(arr.get(0) + " " + arr2.get(0));
+        System.out.println(arr.get(1) + " " + arr2.get(1));
+        System.out.println(arr.get(2) + " " + arr2.get(2));
+
+        System.out.println(" * arba *"); // arba
+
+        for (int i = 0; i < map.size(); i++) {
+
+            String key = map.keySet().toArray()[i].toString(); // blogas kelias, nes kiekvieną kartą kuriamas masyvas
+            String value = map.values().toArray()[i].toString(); // blogas kelias, nes kiekvieną kartą kuriamas masyvas
+            System.out.println(key + " " + value);
+        }
+
+
+        System.out.println("-------------------- kaip paimti ir Key ir value su forEach");
+        for (Map.Entry item : map.entrySet()) {
+
+            System.out.println(item.getKey() + " " + item.getValue());
+        }
 
         sortingMapByKey();
     }

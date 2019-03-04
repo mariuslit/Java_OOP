@@ -9,7 +9,7 @@ public class MainOrientacVarzybos {
 
     public static void main(String[] args) throws IOException {
 
-        Map<Integer, Sportininkas> sportininkai = nuskaitytiDuomenis("C:\\Coding\\Java_OOP\\src\\k_2_18_Map_OrientacinioSportoVarzybos_100proc\\orient-duomenys.txt");
+        Map<Integer, Sportininkas> sportininkai = nuskaitytiDuomenis(new File("").getAbsolutePath() + "\\src\\k_2_18_Map_OrientacinioSportoVarzybos_100proc\\orient-duomenys.txt");
 
         List<Sportininkas> finalistai = new ArrayList<>();
 

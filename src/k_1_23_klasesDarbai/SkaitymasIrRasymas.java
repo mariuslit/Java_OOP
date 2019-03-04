@@ -5,8 +5,8 @@ import java.io.*;
 public class SkaitymasIrRasymas {
 
     public static void main(String[] args) {
-        String file = "C:\\Coding\\Java_OOP\\src\\k_1_23_klasesDarbai\\Test.txt";
-        String fileRasymui = "C:\\Coding\\Java_OOP\\src\\k_1_23_klasesDarbai\\Irasytas.txt";
+        String file = new File("").getAbsolutePath() + "\\src\\k_1_23_klasesDarbai\\Test.txt";
+        String fileRasymui = new File("").getAbsolutePath() + "\\src\\k_1_23_klasesDarbai\\Irasytas.txt";
         try {
             Integer[] nuskaitytiSkaiciai = skaityti(file);
             Integer gautaSuma = Suma(nuskaitytiSkaiciai);

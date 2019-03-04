@@ -2,10 +2,7 @@ package k_2_11_generic_list_lambda_interface_namuDarbai;
 
 import k_2_08_uzduotisSavaitgaliui_Cars.Car;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class TestEmployee {
@@ -15,10 +12,10 @@ public class TestEmployee {
 
         List<Employee> employees, employees2;
         employees =
-                skaityti("C:\\Coding\\Java_OOP\\src\\k_2_11_generic_list_lambda_interface_namuDarbai\\dataEmployee.txt");
+                skaityti(new File("").getAbsolutePath() + "\\src\\k_2_11_generic_list_lambda_interface_namuDarbai\\dataEmployee.txt");
 
         employees2 =
-                skaityti("C:\\Coding\\Java_OOP\\src\\k_2_11_generic_list_lambda_interface_namuDarbai\\dataEmployee2.txt");
+                skaityti(new File("").getAbsolutePath() + "\\src\\k_2_11_generic_list_lambda_interface_namuDarbai\\dataEmployee2.txt");
 
         Objects.requireNonNull(employees).addAll(employees2);
 

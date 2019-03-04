@@ -9,11 +9,11 @@ public class MainKrepsinioVarzybos {
 
         MainKrepsinioVarzybos krepsinioVarzybos = new MainKrepsinioVarzybos();
 
-        Map<Integer, Zaidejas> zaidejai = skaitytiZaidejus("C:\\Coding\\Java_OOP\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\zaidejai.txt");
+        Map<Integer, Zaidejas> zaidejai = skaitytiZaidejus(new File("").getAbsolutePath() + "\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\zaidejai.txt");
 
-//        List<Integer[]> taskai = skaitytiTaskus("C:\\Coding\\Java_OOP\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\taskai.txt");
+//        List<Integer[]> taskai = skaitytiTaskus(new File("").getAbsolutePath() + "\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\taskai.txt");
 //        krepsinioVarzybos.varzybosNuskaitantIsFailo(zaidejai, taskai);
-        List<Integer[]> taskai = skaitytiTaskus2("C:\\Coding\\Java_OOP\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\taskai2.txt");
+        List<Integer[]> taskai = skaitytiTaskus2(new File("").getAbsolutePath() + "\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\taskai2.txt");
         krepsinioVarzybos.varzybosNuskaitantIsFailo2(zaidejai, taskai);
 
 //        krepsinioVarzybos.varzybosTesiasi(zaidejai, taskai);
@@ -53,7 +53,7 @@ public class MainKrepsinioVarzybos {
 
             StringBuilder statistika = gautiStatistika(zaidejai);
             System.out.println(statistika);
-            irasytiDuomenisFailan("C:\\Coding\\Java_OOP\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\suvestine.txt", statistika);
+            irasytiDuomenisFailan(new File("").getAbsolutePath() + "\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\suvestine.txt", statistika);
         }
 
     }
@@ -76,7 +76,7 @@ public class MainKrepsinioVarzybos {
 
             StringBuilder statistika = gautiStatistika(zaidejai);
             System.out.println(statistika);
-            irasytiDuomenisFailan("C:\\Coding\\Java_OOP\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\suvestine.txt", statistika);
+            irasytiDuomenisFailan(new File("").getAbsolutePath() + "\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\suvestine.txt", statistika);
         }
     }
 
@@ -284,7 +284,7 @@ public class MainKrepsinioVarzybos {
 
             StringBuilder statistika = gautiStatistika2(zaidejai);
             System.out.println(statistika);
-//            irasytiDuomenisFailan("C:\\Coding\\Java_OOP\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\suvestine2.txt", statistika);
+//            irasytiDuomenisFailan(new File("").getAbsolutePath() + "\\src\\k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc\\suvestine2.txt", statistika);
         }
     }
 

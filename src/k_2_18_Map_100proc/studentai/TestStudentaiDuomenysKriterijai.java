@@ -1,9 +1,6 @@
 package k_2_18_Map_100proc.studentai;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class TestStudentaiDuomenysKriterijai {
@@ -17,7 +14,7 @@ public class TestStudentaiDuomenysKriterijai {
     public static void main(String[] args) throws IOException {
 
         Set<String> grupes = new TreeSet<>();
-        Map<String, List<Studentas>> studentai = gautiStudentus(grupes, "C:\\Coding\\Java_OOP\\src\\k_2_18_Map_100proc\\studentai\\Studentai.txt");
+        Map<String, List<Studentas>> studentai = gautiStudentus(grupes, new File("").getAbsolutePath() + "\\src\\k_2_18_Map_100proc\\studentai\\Studentai.txt");
 
 //        System.out.println();
         for (String grupe : grupes) {

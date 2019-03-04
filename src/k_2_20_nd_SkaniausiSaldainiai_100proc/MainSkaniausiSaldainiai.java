@@ -1,9 +1,6 @@
 package k_2_20_nd_SkaniausiSaldainiai_100proc;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 /*
@@ -35,7 +32,7 @@ public class MainSkaniausiSaldainiai {
 
     public static void main(String[] args) throws IOException {
 
-        String pathDuomenys = "C:\\Coding\\Java_OOP\\src\\k_2_20_nd_SkaniausiSaldainiai_100proc\\Duomenys.txt";
+        String pathDuomenys = new File("").getAbsolutePath() + "\\src\\k_2_20_nd_SkaniausiSaldainiai_100proc\\Duomenys.txt";
 
         Map<String, List<Saldainis>> gamintojai = nuskaitytiDuomenis(pathDuomenys);
 
