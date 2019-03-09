@@ -2,6 +2,7 @@ package a_fundamental;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.time.temporal.WeekFields;
@@ -33,6 +34,15 @@ public class Fund_19_Date_Time_Calendar {
     }
 
     public static void localDate_examples() {
+
+        // LocalDate sukūrimas
+
+        LocalDate d1 = LocalDate.now();
+        LocalDate d2 = LocalDate.parse("2019-02-06");
+        LocalDate d3 = LocalDate.of(2022, 2, 5);
+        System.out.println(d2.plusDays(10));
+        System.out.println(d2);
+        System.out.println(Period.between(d2,d3).toTotalMonths()); // laikotarpis mėnesiais atrp dviejų datų
 
         LocalDate date; // dažniausiai naudojamas
 

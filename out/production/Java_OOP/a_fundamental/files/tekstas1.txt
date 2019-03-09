@@ -1,3 +1,4 @@
 šis įrašas randasi faile src/a_fundamental/files/tekstas1.txt
 + naujas tekstas
 + naujas tekstas
++ naujas tekstas

@@ -5,7 +5,7 @@ import k_2_15_namuDarbaiSavaitgaliui_Krepsinis_100proc.Zaidejas;
 
 import java.util.*;
 
-public class Fund_18_Lambda_Expression {
+public class Fund_22_Lambda_Expression {
 
     public static void main(String[] args) {
 
