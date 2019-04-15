@@ -6,6 +6,12 @@ import java.text.NumberFormat;
 
 public class Fund_9_Regex_format {
 
+    // []* - betkoks simbolis išskyrus tuos kurie tarp [] skliaustų
+    // norint pakeisti daatos formatą
+    // 12/01/2018 -> 2018
+    // find:    (\d\d)/(\d\d)/(\d{4}) - betkoks simbolis išskyrus tuos kurie tarp [] skliaustų
+    // replace: $3-$1-$2
+
     static String num = "-10.12345"; // 9 sk
     static String txt = "-Abc, De.";
     static String r = "";

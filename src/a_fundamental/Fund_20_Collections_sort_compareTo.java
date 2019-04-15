@@ -70,9 +70,7 @@ public class Fund_20_Collections_sort_compareTo {
     }
 }
 
-class Zmogus
-        implements Comparable<Zmogus>
-{
+class Zmogus implements Comparable<Zmogus> {
 
     private String vardas;
     private String pavarde;

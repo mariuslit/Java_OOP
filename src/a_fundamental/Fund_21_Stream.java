@@ -79,12 +79,13 @@ public class Fund_21_Stream {
         List<String> myList = Arrays.asList("a1", "a2", "b1", "c2", "c1", "caswinciu");
 
         myList.stream()
-                .filter(a -> a.startsWith("c")) // filtruoja
+                .filter(a -> a.startsWith("c")) // filtruoja, paleidžia po viena masyvo elementa, jeigu atitinka salyga (salyga turi būti boolean)
                 .map(a -> a.toUpperCase())      // keičia elementus LAMBDA
                 .map(String::toUpperCase)       // keičia elementus LAMBDA trumpesnis var.
                 .sorted()                       // rūšiuoja sort a-z
                 .forEach(System.out::println);  // atspausdina
     }
+//                .findAny() // pasakoma kad paimk tik vieną betkurį elementa iš masyve , grąžina optional (obektas kuris ne lygus null))
 
     // surasti ar Set kolekcija turi Objektą masina
     public static boolean containsCar(Set<Masina> masinos, Masina masina) {
