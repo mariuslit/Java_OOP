@@ -7,6 +7,8 @@ public class Fund_5_Array {
 
     public static void main(String args[]) {
 
+        // masyvas (array) yra objektas ir jam galioja visos objektų (nuorodų/pointerių) taisyklėės
+
         // ARRAY DEKLARAVIMAS
 
         // 1 tik deklaravimas
@@ -16,9 +18,9 @@ public class Fund_5_Array {
 
         // 2 deklaravimas, inicializavimas su default reikšėmis
         int[] arr4 = new int[5]; // 5 narių asyvas, kurių reikšmės Integer tipo = 0 (default)
-        String[] arr44 = new String[5]; // 5 narių asyvas, kurių reikšmės String tipo = null (default)
-        for (int i = 0; i < arr4.length; i++) {
-            System.out.println(arr4[i] + " " + arr44[i]);
+        String[] arr4str = new String[5]; // 5 narių asyvas, kurių reikšmės String tipo = null (default)
+        for (int i = 0; i < 5; i++) {
+            System.out.println(arr4[i] + " " + arr4str[i]);
         }
 
         // 3 deklaravimas su priskyrimu
@@ -66,6 +68,15 @@ public class Fund_5_Array {
         System.out.println(copyTo[0]);
         System.out.println(String.valueOf(copyTo));
         System.out.println(copyTo[6]);
+
+
+        // pointeriai
+        int[] mas1 = new int[1];
+        int[] mas2 = mas1;
+        mas2[0] = 2;
+        System.out.println(mas1[0]);
+        mas1[0] = 4;
+        System.out.println(mas2[0]);
 
 
         //=======================================================================================//

@@ -2,63 +2,69 @@ package a_fundamental;
 
 public interface Fund_14_interface {
 
-    // trys metodai: metodas_1/_2/_3 yra public abstract pagal nutylėjimą (default), todėl public abstract rašyti nereikia
-    void metodas_1();
+    static void main(String[] args) {
 
-    String metodas_2();
+        AA aa = new AA();
+        aa.metodas_1();
+        System.out.println(aa.metodas_2());
+        System.out.println(aa.metodas_3());
+        aa.metodas_4(); // iškviečiamas default metodas
+        aa.metodas_6(); // iškviečiamas perrašytas default metodas
+        System.out.println(AAAinterface.metodas_5());
+    }
+}
 
-    Integer metodas_3();
+interface AAAinterface {
 
-    // default - įgyvendinti neprivaloma, bet galima (overridding)
+    // visi trys metodai pagal nutylėjimą yra public abstract, todėl public abstract rašyti nereikia
+    /*public abstract*/ void metodas_1();
+
+    /*public abstract*/ String metodas_2();
+
+    /*public abstract*/ Integer metodas_3();
+
+    // default - įgyvendinti neprivaloma, bet galima perrašyti (overiding)
     default void metodas_4() {
-        System.out.println("tai ketvirtasis sąsajos Fund_14_Interface metodas, default - reiškia įgyvendinti neprivaloma");
-        System.out.println(metodas_5());
+        System.out.println("tai metodas_4 sąsajos Fund_14_Interface metodas, " +
+                "default - reiškia įgyvendinti neprivaloma, default galima naudoti, kaip metodų biblioteką");
     }
 
+    // static - naudojamas tik interfeiso viduje
     static String metodas_5() {
-        return "tai penktasis sąsajos Fund_14_Interface metodas, static - reiškia gali būti pasiekiamas ir naudojamas tik pačio interfeiso viduje";
+        return "tai metodas_5 sąsajos Fund_14_Interface metodas, " +
+                "static - reiškia gali būti pasiekiamas ir naudojamas tik pačio interfeiso viduje";
     }
 
-    default void metodas_6() { // skirtas perrašymui (overridding)
-        System.out.println("tai šeštasis sąsajos Fund_14_Interface metodas, šis metodas bus perrašytas (overridding)");
+    // aprastas metodas, skirtas perrašymui (overiding) pavyzdyje
+    default void metodas_6() {
+        metodas_4();
+        System.out.println("tai default metodas_6 sąsajos Fund_14_Interface metodas, šis metodas bus perrašytas (overiding)");
     }
 }
 
 /**
  * klasė įgyvendina vieną intefeisą (bet gali įgyvendinti kelis surašytus po "implements" ir atskirtus klableliais)
  */
-class AA implements Fund_14_interface {
+class AA implements AAAinterface {
 
     // Privalomas metodo "metodas_1" įgyendinimas
     public void metodas_1() {
-        System.out.println("Privaloma įgyvendinti sąsajoje Fund_14_Interface nurodytus metodus:");
+        System.out.println("Įgyvendintas sąsajoje AAAinterface metodas_1");
     }
 
     // Privalomas metodo "metodas_2" įgyendinimas
     public String metodas_2() {
-        return "metodas_1, metodas_2, metodas_3";
+        return "Įgyvendintas sąsajoje AAAinterface  metodas_2, String tipo metodas grąžina šį tekstą";
     }
 
     // Privalomas metodo "metodas_3" įgyendinimas
     public Integer metodas_3() {
-        System.out.print("čia trečiasis Integer tipo metodas, grąžina skaitinę reikšmę: ");
+        System.out.print("Įgyvendintas sąsajoje AAAinterface  metodas_3, Integer tipo metodas grąžina skaitinę reikšmę: ");
         return 3;
     }
 
     @Override
     public void metodas_6() {
-        System.out.println("tai šeštasis sąsajos Fund_14_Interface metodas, šis metodas yra perrašytas: anotacija @Override");
-    }
-}
-
-class TestInterface{
-
-    public static void main(String[] args) {
-        AA aa = new AA();
-        aa.metodas_1();
-        System.out.println(aa.metodas_2());
-        System.out.println(aa.metodas_3());
-        aa.metodas_4(); // šis metodas
-        aa.metodas_6(); // perrašytas metodas
+        System.out.println("tai metodas_6 sąsajos Fund_14_Interface metodas, šis metodas yra perrašytas: anotacija @Override");
     }
 }
