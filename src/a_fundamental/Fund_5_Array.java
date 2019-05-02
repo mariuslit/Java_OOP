@@ -103,21 +103,23 @@ public class Fund_5_Array {
 
         MaistoProduktai[] mp = new MaistoProduktai[4];
 
-        mp[0] = new MaistoProduktai("Pienas", 3d, 6);
-        mp[1] = new MaistoProduktai("Duona", 1d, 5);
-        mp[2] = new MaistoProduktai("Dešra", 0.4, 10);
+        mp[0] = new MaistoProduktai("Pienas   ", 3d, 6);
+        mp[1] = new MaistoProduktai("Duona    ", 1d, 5);
+        mp[2] = new MaistoProduktai("Dešra    ", 0.4, 10);
         mp[3] = new MaistoProduktai("Kepenėlės", 0.5, 2);
 
 
         // greitas būdas išrūšiuoti objektų mąsyvą pagal parametrą
         Arrays.sort(mp, Comparator.comparing(MaistoProduktai::getKiekis));
-        spausdinti(mp, "\n pagal kiekį");
+        spausdinti(mp, "pagal kiekį");
         Arrays.sort(mp, Comparator.comparing(MaistoProduktai::getGaliojimasDien));
-        spausdinti(mp, "\n pagal galiojimą");
+        spausdinti(mp, "pagal galiojimą");
+        Arrays.sort(mp, Comparator.comparing(MaistoProduktai::getName));
+        spausdinti(mp, "pagal vardą");
     }
 
     public static <T> void spausdinti(T[] arr, String txt) {
-        System.out.println(" - " + txt);
+        System.out.println("* " + txt);
         for (T item : arr) {
 
             System.out.println(item.toString());
@@ -137,7 +139,7 @@ class MaistoProduktai {
     }
 
     public String toString() {
-        return getName() + " " + getKiekis() + " " + getGaliojimasDien();
+        return "    " + getName() + "  " + getKiekis() + "  " + getGaliojimasDien();
     }
 
     public String getName() {
