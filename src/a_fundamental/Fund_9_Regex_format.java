@@ -56,7 +56,7 @@ public class Fund_9_Regex_format {
         System.out.println("|---------------|----------|----------|---------------NEBAIGTAS----------------------------|");
 
         System.out.println("text1 " + 5.587895566 + " text2");
-        System.out.printf("text1 %.2f textas2\n %.3f hhhhhh", 5.587895566, 8.456987, 55);
+        System.out.printf("text1 %.4f textas2\n %.3f hhhhhh", 5.587895566, 8.456987);
 
     }
 }
@@ -75,7 +75,7 @@ class formatai {
         System.out.println("------------------------------------");
         decimalFormat = new DecimalFormat("#0.00");
         // TODO: 2019-02-13 paklausti Džiugo dėl 0.055 kodėl apvalinamas į 0.5
-        System.out.println(decimalFormat.format(4.055));
+        System.out.println(decimalFormat.format(854.055));
         System.out.println(decimalFormat.format(4.5));
 
         System.out.println("------------------------------------");
